@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import { Nacho } from "../components/nacho";
 
 export default function Home() {
   console.log("home, first render");

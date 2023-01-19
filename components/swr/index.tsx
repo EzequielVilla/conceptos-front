@@ -14,7 +14,7 @@ export const SwrHome = () => {
         Como su{" "}
         <a
           href="https://swr.vercel.app/"
-          target="_blank"
+          rel="noopener"
           style={{ color: "blue" }}
         >
           documentacion
@@ -49,7 +49,7 @@ export const SwrHome = () => {
       </p>
       <a
         href="https://e-commerce-m10.vercel.app/"
-        target="_blank"
+        rel="noopener"
         style={{ color: "blue" }}
       >
         Demo en un e-commerce{" "}
@@ -58,7 +58,7 @@ export const SwrHome = () => {
         Distintos usos pueden verse en la documentacion antes mencionada, como
         useSWRImmutable, o un tercer parametro de objetos dentro de useSWR con
         distintas opciones, como revalidar cada x tiempo. Otro uso importante es
-        el "mutate", que hace un update rapido en la data local y hace la
+        el mutate, que hace un update rapido en la data local y hace la
         revalidacion (fetch) o incluso puede mutar muchas rutas porque busca
         globalmente las keys (si se traba con ids por ejemplo y algo tiene que
         cambiar en todos los que uno indique). Distintas revalidaciones y

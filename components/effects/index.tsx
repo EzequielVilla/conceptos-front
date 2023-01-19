@@ -28,7 +28,7 @@ export const EffectsHome = () => {
         {">"}
         <a
           href="https://overreacted.io/a-complete-guide-to-useeffect"
-          target="_blank"
+          rel="noopener"
           style={{ color: "blue" }}
         >
           ir al blog que habla de effects!
@@ -39,7 +39,7 @@ export const EffectsHome = () => {
         Cada render tiene su propio state, effect, handler{" "}
         <a
           href="https://codesandbox.io/s/w2wxl3yo0l"
-          target="_blank"
+          rel="noopener"
           style={{ color: "blue" }}
         >
           Ir a pagina de prueba
@@ -50,10 +50,10 @@ export const EffectsHome = () => {
       <p>
         {" "}
         - React sincroniza con el DOM con respecto a los state y props actuales
-        , no distingue entre un "mount" o un "update". Por lo general se piensa
-        como un mount/unmount/update. Por ejemplo en el blog se menciona que es
-        nadar contra la marea el escribir un effect que funcione de distinta
-        forma dependiendo si es la primera vez o no que se monta el componente.
+        , no distingue entre un mount o un update. Por lo general se piensa como
+        un mount/unmount/update. Por ejemplo en el blog se menciona que es nadar
+        contra la marea el escribir un effect que funcione de distinta forma
+        dependiendo si es la primera vez o no que se monta el componente.
       </p>
       <p>
         - El autor aconseja mover todas las funciones que dependan de useEffect
@@ -92,14 +92,14 @@ export const EffectsHome = () => {
       </p>
       <a
         href="https://beta.reactjs.org/learn/synchronizing-with-effects"
-        target="_blank"
+        rel="noopener"
         style={{ color: "blue" }}
       >
         Nueva doc!
       </a>
       <p>
         Uno de los datos que brinda la documentacion es que el hook useEffect se
-        "activa" despues del render. Por ejemplo si alguien quisiera seleccionar
+        activa despues del render. Por ejemplo si alguien quisiera seleccionar
         algo del DOM mediante usando una ref (referencia) le va a tirar error
         porque todavia no existe. Peeeero si se envuelve dentro de un useEffect,
         que se ejecuta luego de que se pinte el DOM, entonces ese elemento si
@@ -168,11 +168,11 @@ export const EffectsHome = () => {
           que el cleanup no esta funcionando correctamente.{" "}
           <a
             href="//https://beta.reactjs.org/learn/synchronizing-with-effects#putting-it-all-together"
-            target="_blank"
+            rel="noopener"
             style={{ color: "blue" }}
           >
-            ejemplo de escribir "hola, con y sin cleanup (hay que tocar el
-            codigo que nos dejan de muestra)
+            ejemplo de escribir hola, con y sin cleanup (hay que tocar el codigo
+            que nos dejan de muestra)
           </a>
         </p>
         <CodeBlock
@@ -182,7 +182,7 @@ export const EffectsHome = () => {
           theme={dracula}
         />
         <p>
-          En este ultimo caso el codigo al "top level" es decir por encima de
+          En este ultimo caso el codigo al top level es decir por encima de
           donde se comienza la declaracion del componente, solo corre una vez,
           aunque recomienda no usarlo con abuso. Principalmente porque a veces
           el codigo se quiere mover de un lado a otro y aquello que esta
@@ -206,17 +206,17 @@ export const EffectsHome = () => {
         />
         <p>
           Si en el input (donde se pone la query que no esta en el ejemplo) se
-          escribe muy rapido la palabra "hola", lo que va a hacer el useEffect
-          es que a cada cambio de letra se haga un fetch y suceda algo llamado{" "}
+          escribe muy rapido la palabra hola, lo que va a hacer el useEffect es
+          que a cada cambio de letra se haga un fetch y suceda algo llamado{" "}
           <a
             href="https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data"
-            target="_blank"
+            rel="noopener"
             style={{ color: "blue" }}
           >
             {" "}
-            “race condition”
+            race condition
           </a>
-          , es decir, se va a hacer fetch de "h", "ho" , "hol", "hola", para
+          , es decir, se va a hacer fetch de h, ho , hol, hola, para
           solucionarlo se agrega la cleanup function en el Effect.
         </p>
         <CodeBlock
@@ -244,7 +244,7 @@ export const EffectsHome = () => {
         Conferencia{" "}
         <a
           href="https://www.youtube.com/watch?v=HPoC-k7Rxwo"
-          target="_blank"
+          rel="noopener"
           style={{ color: "blue" }}
         >
           Link
@@ -256,11 +256,11 @@ export const EffectsHome = () => {
         <li>
           {" "}
           Se usa para sincronizacion con un sistema externo, como (network,
-          suscripcion y DOM). Si lo que se quiere es usar este hook para el
-          "data flow" entonces va a haber problemas
+          suscripcion y DOM). Si lo que se quiere es usar este hook para el data
+          flow entonces va a haber problemas
         </li>
         <li>
-          Las acciones de "efecto" se manejan en los event handlers, como
+          Las acciones de efecto se manejan en los event handlers, como
           submitHandler, onChangeHandler, onClickHandler
         </li>
         <li>No se recomienda para hacer data fetch</li>

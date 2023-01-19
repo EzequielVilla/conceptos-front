@@ -18,7 +18,7 @@ export const HooksHome = () => {
         que sabemos que vamos a reutilizar, en una funcion aparte. Lo
         recomendable es crear una carpeta hooks y guardar todo lo referente ahi.
         Para diferencias (y que react las interprete como tal, es decir, como
-        custom-hooks) hay que comenzar la funcion con la palabra reservada "use"
+        custom-hooks) hay que comenzar la funcion con la palabra reservada use
       </p>
       <p>
         En este primer caso se abstrae la logica que se repitiria en aprox 3
