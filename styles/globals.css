@@ -14,13 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --blue: #016A99;
+  --violet: #9A4DFF;
+  --orange:#FF9D01;
+  --pink:#CC1F72;
+  --green:#64BD0B;
+  --grey: #F0F0F0;
+}
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    
   }
   body {
-    color: white;
-    background: black;
+    
+    
   }
 }
